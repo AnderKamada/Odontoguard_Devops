@@ -37,5 +37,6 @@ steps:
   inputs:
     azureSubscription: '$(azureSubscription)'
     appName: '$(webAppName)'
-    package: '$(Build.ArtifactStagingDirectory)/*.jar'
+    package: '$(Build.ArtifactStagingDirectory)/target/*.jar'
+
 
