@@ -18,7 +18,7 @@ steps:
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'PreInstalled'
 
-- script: mvn clean package -DskipTests
+- script: mvn clean package -DskipTests -X
   displayName: 'Build com Maven'
 
 - task: CopyFiles@2
