@@ -12,13 +12,16 @@ variables:
   packageDirectory: '$(System.DefaultWorkingDirectory)/target'
 
 steps:
-- task: UseJavaVersion@1
+steps:
+- task: JavaToolInstaller@0
   inputs:
     versionSpec: '17'
-    architecture: 'x64'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'PreInstalled'
 
 - script: mvn clean package -DskipTests
   displayName: 'Build com Maven'
+
 
 - task: CopyFiles@2
   inputs:
