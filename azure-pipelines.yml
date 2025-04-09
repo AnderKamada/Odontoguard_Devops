@@ -36,4 +36,5 @@ steps:
   inputs:
     azureSubscription: '$(azureSubscription)'
     appName: '$(webAppName)'
-    package: '$(Build.ArtifactStagingDirectory)/*.jar'
+   package: '$(Build.ArtifactStagingDirectory)/odontospring-0.0.1-SNAPSHOT.jar'
+
