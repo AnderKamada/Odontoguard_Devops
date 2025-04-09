@@ -38,5 +38,3 @@ steps:
     appName: '$(webAppName)'
     package: '$(Build.ArtifactStagingDirectory)/*.jar'
 
-
-
