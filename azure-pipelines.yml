@@ -1,0 +1,37 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  azureSubscription: 'AnderKamada'   
+  webAppName: 'odontospring-api'                        
+  packageDirectory: '$(System.DefaultWorkingDirectory)/target'
+
+steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'package'
+    javaHomeOption: 'JavaSE17'
+    options: '-DskipTests'
+
+- task: CopyFiles@2
+  inputs:
+    contents: '**/*.jar'
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: '$(azureSubscription)'
+    appName: '$(webAppName)'
+    package: '$(Build.ArtifactStagingDirectory)/*.jar'
