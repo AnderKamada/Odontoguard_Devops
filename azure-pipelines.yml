@@ -7,11 +7,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  azureSubscription: 'OdontoAzureConnection'   
-  webAppName: 'odontospring-api'                        
+  azureSubscription: 'OdontoAzureConnection'
+  webAppName: 'odontospring-api'
   packageDirectory: '$(System.DefaultWorkingDirectory)/target'
 
-steps:
 steps:
 - task: JavaToolInstaller@0
   inputs:
@@ -21,7 +20,6 @@ steps:
 
 - script: mvn clean package -DskipTests
   displayName: 'Build com Maven'
-
 
 - task: CopyFiles@2
   inputs:
