@@ -24,22 +24,21 @@ Executar pipeline
 
 A pipeline irá:
 
-Fazer checkout do repositório
+-Fazer checkout do repositório
 
-Instalar JDK 17
+-Instalar JDK 17
 
-Rodar mvn clean package
+-Rodar mvn clean package
 
-Copiar e publicar o JAR como artefato
+-Copiar e publicar o JAR como artefato
 
-Fazer deploy no Azure App Service (odontospring-api)
+-Fazer deploy no Azure App Service (odontospring-api)
+
 
 Acesse a API publicada
-
-https://odontospring-api-xxxxxx.azurewebsites.net/api/pacientes
+https://odontospring-api-ggg4fqgzayhyb4ay.brazilsouth-01.azurewebsites.net/api/pacientes
 
 Swagger
-
 🧪 Testes via Swagger
 Acesse o Swagger e teste todos os endpoints de forma intuitiva:
 
@@ -54,9 +53,6 @@ DELETE /api/pacientes/{id}
 E também os de tratamentos.
 
 🗂️ Scripts JSON para Testes
-json
-Copiar
-Editar
 // POST /api/pacientes
 {
   "nome": "João da Silva",
