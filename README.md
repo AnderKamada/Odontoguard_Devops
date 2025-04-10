@@ -11,15 +11,14 @@ Azure App Service -
 Swagger (Documentação da API)
 
 🚀 Como Executar a Pipeline no Azure DevOps
+
 Clone este repositório
 
-bash
-Copiar
-Editar
 git clone https://github.com/AnderKamada/Odontoguard_Devops.git
+
 Acesse o Azure DevOps
 
-Pipeline CI/CD já configurada: Link da Pipeline
+Pipeline CI/CD já configurada: (https://dev.azure.com/2TDSPC-2024-B/Odontoguard/_build)
 
 Executar pipeline
 
