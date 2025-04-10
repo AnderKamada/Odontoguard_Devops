@@ -4,8 +4,8 @@ API REST desenvolvida em Java com Spring Boot para o gerenciamento de pacientes 
 
 ☁️ Tecnologias utilizadas
 
-Java 17 + Spring Boot
-PostgreSQL (Banco de dados em nuvem)
-Azure DevOps (CI/CD)
-Azure App Service
+Java 17 + Spring Boot -
+PostgreSQL (Banco de dados em nuvem) -
+Azure DevOps (CI/CD) -
+Azure App Service -
 Swagger (Documentação da API)
