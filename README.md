@@ -1,0 +1,2 @@
+🦷 Descrição da Solução - OdontoSpring API
+Desenvolvemos uma API em Java com Spring Boot para gerenciar pacientes e tratamentos odontológicos. A aplicação permite cadastrar, listar, editar e excluir registros, com os dados sendo salvos em um banco PostgreSQL na nuvem. Utilizamos o Azure DevOps para automatizar o processo de build e deploy da aplicação com pipelines de CI/CD. A API está publicada no Azure App Service e documentada com Swagger.
